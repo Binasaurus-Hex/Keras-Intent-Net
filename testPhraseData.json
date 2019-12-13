@@ -1,0 +1,55 @@
+{
+  "SummarizeDay" : [
+    "what sort of tasks do I have today",
+    "give me a list of my upcoming jobs"
+  ],
+  "GetTime" : [
+    "what is the current time",
+    "what currently is the time"
+  ],
+  "GetDate": [
+    "what is today date",
+    "what is the current date"
+  ],
+
+  "NextJob" : [
+    "show me what my next job is",
+    "tell me what ive got next"
+  ],
+
+  "StartNavigation" : [
+    "plot a course",
+    "start navigating me to my next destination",
+    "set a new destination"
+  ],
+
+  "StopNavigation" : [
+    "cancel the current course",
+    "abort current planned course"
+  ],
+
+  "StopListening": [
+    "turn off listening",
+    "cancel microphone"
+  ],
+
+  "StartListening": [
+    "begin listening",
+    "startup listening"
+  ],
+
+  "MeHelp": [
+    "ill give you a hand",
+    "i want to help you"
+  ],
+
+  "HelpMe": [
+    "please assist me",
+    "i need you to help me"
+  ],
+
+  "GetHelp": [
+    "i need you to get help",
+    "please get me some help"
+  ]
+}

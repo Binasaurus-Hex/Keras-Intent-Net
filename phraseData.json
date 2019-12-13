@@ -1,0 +1,78 @@
+{
+  "SummarizeDay": [
+    "summarize my day",
+    "what kind of jobs do I have today",
+    "what jobs do I have today",
+    "what jobs do I have later on",
+    "give me a summary of my day",
+    "give me my job list"
+  ],
+
+  "GetTime": [
+    "whats the time",
+    "Tell me the time",
+    "give me the time",
+    "what time is it",
+    "could you tell me the time"
+  ],
+
+  "GetDate": [
+    "whats the date today",
+    "what is the day today",
+    "what day is it today",
+    "Tell me what day it is today"
+  ],
+
+  "NextJob" : [
+    "tell me what my next job is",
+    "what my next job",
+    "could you tell me what my next job is"
+  ],
+
+  "StartNavigation" : [
+    "start navigation",
+    "navigate me to my next destination",
+    "begin navigation",
+    "plot a course for my next destination"
+  ],
+
+  "StopNavigation" : [
+    "stop navigation",
+    "stop navigating me",
+    "cancel navigation"
+  ],
+
+  "StopListening": [
+    "stop listening to me",
+    "stop recording",
+    "stop record",
+    "shut down listener",
+    "dont listen"
+  ],
+
+  "StartListening": [
+    "start listening",
+    "start recording",
+    "record"
+  ],
+
+  "MeHelp": [
+    "I will help you",
+    "I will help",
+    "please allow me to help you",
+    "I will provide assistance"
+  ],
+
+  "HelpMe": [
+    "help me",
+    "i require assistance",
+    "please help me",
+    "I need you to help me"
+  ],
+
+  "GetHelp": [
+    "i need you to get help",
+    "please get me some help",
+    "I need you to fetch help"
+  ]
+}
