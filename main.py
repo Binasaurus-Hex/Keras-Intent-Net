@@ -1,6 +1,7 @@
 from keras.preprocessing import sequence
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation
+from keras.layers import Conv1D,GlobalMaxPooling1D
 from DataConverter import DataConverter
 import numpy as np
 
@@ -9,11 +10,14 @@ converter = DataConverter()
 
 word_vector_width = 300
 number_of_outputs = len(converter.intentSet)
+examples = training_inputs.shape[1]
 
 
 
 model = Sequential()
-model.add(Dense(word_vector_width, input_shape=(word_vector_width,), activation="sigmoid"))
+model.add(Conv1D(50, 3, input_shape=(examples, word_vector_width), activation="relu"))
+model.add(GlobalMaxPooling1D())
+model.add(Dense(word_vector_width, activation="sigmoid"))
 model.add(Dropout(0.2))
 model.add(Dense(number_of_outputs, activation="sigmoid"))
 model.compile(loss='mean_squared_error',
@@ -25,8 +29,8 @@ model.fit(training_inputs, training_outputs,
 
 while True:
     phrase = input("phrase : ")
-    vector_phrase = np.zeros((1, word_vector_width))
-    vector_phrase += converter.get_input_array(phrase)
+    vector_phrase = np.zeros((1,50, word_vector_width))
+    vector_phrase[0] = converter.get_input_array(phrase)
 
 
     predictionClass = model.predict_classes(x=vector_phrase)

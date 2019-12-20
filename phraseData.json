@@ -60,7 +60,8 @@
     "I will help you",
     "I will help",
     "please allow me to help you",
-    "I will provide assistance"
+    "I will provide assistance",
+    "me help"
   ],
 
   "HelpMe": [
@@ -71,6 +72,7 @@
   ],
 
   "GetHelp": [
+    "get help",
     "i need you to get help",
     "please get me some help",
     "I need you to fetch help"

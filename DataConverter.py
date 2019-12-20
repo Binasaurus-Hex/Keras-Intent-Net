@@ -75,17 +75,21 @@ class DataConverter:
 
     def get_input_array(self, phrase):
         phraseList = phrase.split()
-        inputArray = np.zeros(300)
-        for word in phraseList:
+        wordNum = len(phraseList)
+        inputArray = np.zeros(shape=(50, 300))
+        for index in range(wordNum):
+            word = phraseList[index]
             try:
                 word = self.clean_word(word)
                 word_vec = self.model.get_vector(word)
-                inputArray += word_vec
+                inputArray[index] = word_vec
+
             except ValueError:
                 continue
             except KeyError:
                 print(word)
                 continue
+        print(inputArray.shape)
         return inputArray
 
     def getOutputArray(self, intent):
@@ -98,12 +102,16 @@ class DataConverter:
         return outputArray
 
     def getDataMatrices(self, examples):
-        input_matrix = []
+        input_matrix = np.zeros(shape=(len(examples),50,300))
         output_matrix = []
-        for example in examples:
-            input_matrix.append(self.get_input_array(example[1]))
+        for index in range(len(examples)):
+            example = examples[index]
+            input_matrix[index] = self.get_input_array(example[1])
             output_matrix.append(self.getOutputArray(example[0]))
-        return np.array(input_matrix), np.array(output_matrix)
+        input_matrix = np.array(input_matrix)
+        output_matrix = np.array(output_matrix)
+        print(input_matrix.shape)
+        return input_matrix, output_matrix
 
     def getIntent(self, index):
         return self.intentSet[index]
