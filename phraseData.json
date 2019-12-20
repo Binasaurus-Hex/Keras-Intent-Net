@@ -76,5 +76,9 @@
     "i need you to get help",
     "please get me some help",
     "I need you to fetch help"
+  ],
+
+  "Unknown": [
+    ""
   ]
 }

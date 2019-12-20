@@ -2,7 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/CiQ-Mobile-Workflow-Konicaminolta" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Keras-Intent-Net" vcs="Git" />
   </component>
 </project>

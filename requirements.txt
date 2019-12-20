@@ -1,2 +1,3 @@
+gensim
 numpy
 keras

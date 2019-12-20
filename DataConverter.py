@@ -11,6 +11,7 @@ also will convert a provided phrase to input data
 
 class DataConverter:
     def __init__(self):
+        self.wordCap = 20
         self.trainingFile = "phraseData.json"
         self.testingFile = "testPhraseData.json"
         self.wordSet = []
@@ -76,7 +77,7 @@ class DataConverter:
     def get_input_array(self, phrase):
         phraseList = phrase.split()
         wordNum = len(phraseList)
-        inputArray = np.zeros(shape=(50, 300))
+        inputArray = np.zeros(shape=(self.wordCap, 300))
         for index in range(wordNum):
             word = phraseList[index]
             try:
@@ -87,9 +88,7 @@ class DataConverter:
             except ValueError:
                 continue
             except KeyError:
-                print(word)
                 continue
-        print(inputArray.shape)
         return inputArray
 
     def getOutputArray(self, intent):
@@ -102,7 +101,7 @@ class DataConverter:
         return outputArray
 
     def getDataMatrices(self, examples):
-        input_matrix = np.zeros(shape=(len(examples),50,300))
+        input_matrix = np.zeros(shape=(len(examples),self.wordCap,300))
         output_matrix = []
         for index in range(len(examples)):
             example = examples[index]
@@ -110,7 +109,6 @@ class DataConverter:
             output_matrix.append(self.getOutputArray(example[0]))
         input_matrix = np.array(input_matrix)
         output_matrix = np.array(output_matrix)
-        print(input_matrix.shape)
         return input_matrix, output_matrix
 
     def getIntent(self, index):
