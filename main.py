@@ -6,9 +6,9 @@ import numpy as np
 import msvcrt
 import os
 
-from Model import Model
+from IntentModel import IntentModel
 
-model = Model()
+model = IntentModel()
 
 os.system('cls')
 phrase = ""
