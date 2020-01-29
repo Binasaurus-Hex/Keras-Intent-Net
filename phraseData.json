@@ -72,11 +72,26 @@
     "I need you to help me"
   ],
 
-  "GetHelp": [
-    "get help",
-    "i need you to get help",
-    "please get me some help",
-    "I need you to fetch help"
+  "MakeCoffee": [
+    "make me a coffee",
+    "i want a mocha",
+    "i would like an espresso"
+  ],
+
+    "MakeTea": [
+    "i would like a tea",
+    "i want a tea with milk"
+  ],
+
+  "LightsOn": [
+    "turn the lights on",
+    "switch the lights on"
+  ],
+
+  "LightsOff": [
+    "switch the lights off",
+    "turn the lights off",
+    "lights off"
   ],
 
   "Unknown": [

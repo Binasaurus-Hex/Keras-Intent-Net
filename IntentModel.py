@@ -23,7 +23,7 @@ class IntentModel:
         input_tensor = Input(shape=(self.examples, self.word_vector_width))
         conv_filters = []
         for kernel_len in [2, 3, 5]:
-            conv = Conv1D(50, kernel_len, activation="relu")(input_tensor)
+            conv = Conv1D(10, kernel_len, activation="relu")(input_tensor)
             pooling = GlobalMaxPooling1D()(conv)
             conv_filters.append(pooling)
         merged = keras.layers.concatenate(conv_filters)
@@ -36,7 +36,7 @@ class IntentModel:
                       optimizer='adam',
                       metrics=['accuracy'])
         model.fit(training_inputs, training_outputs,
-                  epochs=500,
+                  epochs=600,
                   validation_data=(testing_inputs, testing_outputs))
 
         return model

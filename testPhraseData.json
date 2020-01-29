@@ -25,7 +25,9 @@
 
   "StopNavigation" : [
     "cancel the current course",
-    "abort current planned course"
+    "abort current planned course",
+    "stop navigation",
+    "turn off navigation"
   ],
 
   "StopListening": [
@@ -48,9 +50,28 @@
     "i need you to help me"
   ],
 
-  "GetHelp": [
-    "i need you to get help",
-    "please get me some help"
+  "MakeCoffee": [
+    "make me a coffee",
+    "i want a mocha",
+    "i would like an espresso"
+  ],
+
+  "MakeTea": [
+    "i would like a tea",
+    "i want a tea with milk"
+  ],
+
+  "LightsOn": [
+    "turn the lights on",
+    "switch the lights on",
+    "turn light on"
+  ],
+
+  "LightsOff": [
+    "switch the lights off",
+    "turn the lights off",
+    "lights off",
+    "turn light off"
   ],
 
   "Unknown": [
