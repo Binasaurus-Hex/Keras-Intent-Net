@@ -44,8 +44,6 @@ class IntentModel:
     def getIntent(self, phrase):
         vector_phrase = np.zeros((1, self.converter.wordCap, self.word_vector_width))
         vector_phrase[0] = self.converter.get_input_array(phrase)
-
-        predictionVector = self.model.predict([vector_phrase])
-        
-        intent = self.converter.getIntent(index)
+        prediction_vector = self.model.predict([vector_phrase])
+        intent = self.converter.getIntent(prediction_vector[0])
         return intent

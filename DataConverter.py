@@ -111,5 +111,7 @@ class DataConverter:
         output_matrix = np.array(output_matrix)
         return input_matrix, output_matrix
 
-    def getIntent(self, index):
+    def getIntent(self, output_array: np.ndarray):
+        result = np.where(output_array == np.amax(output_array))
+        index = result[0][0]
         return self.intentSet[index]
