@@ -1,15 +1,13 @@
 import keras
 from keras import Input, Model
-
 from DataConverter import DataConverter
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Concatenate
+from keras.layers import Dense, Dropout, Activation
 from keras.layers import Conv1D, GlobalMaxPooling1D
 import numpy as np
 
 
 class IntentModel:
-    def __init__(self):
+    def __init__(self, filename=None):
         self.converter = DataConverter()
         (training_inputs, training_outputs), (testing_inputs, testing_outputs) = self.converter.getData()
 
@@ -17,7 +15,10 @@ class IntentModel:
         self.number_of_outputs = len(self.converter.intentSet)
         self.examples = training_inputs.shape[1]
 
-        self.model = self.getModel(training_inputs, training_outputs, testing_inputs, testing_outputs)
+        if filename is None:
+            self.model = self.getModel(training_inputs, training_outputs, testing_inputs, testing_outputs)
+        else:
+            self.model = self.load(filename)
 
     def getModel(self, training_inputs, training_outputs, testing_inputs, testing_outputs):
         input_tensor = Input(shape=(self.examples, self.word_vector_width))
@@ -47,3 +48,9 @@ class IntentModel:
         prediction_vector = self.model.predict([vector_phrase])
         intent = self.converter.getIntent(prediction_vector[0])
         return intent
+
+    def save(self, filename):
+        self.model.save(filename)
+
+    def load(self, filename):
+        return keras.models.load_model(filename)

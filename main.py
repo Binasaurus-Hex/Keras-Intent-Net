@@ -1,15 +1,8 @@
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.layers import Conv1D, GlobalMaxPooling1D
-from DataConverter import DataConverter
-import numpy as np
 import msvcrt
 import os
+from IntentModelStripped import IntentModelStripped
 
-from IntentModel import IntentModel
-
-model = IntentModel()
-
+model = IntentModelStripped("intent_model.h5")
 os.system('cls')
 phrase = ""
 while True:
@@ -22,8 +15,4 @@ while True:
             continue
         else:
             phrase += str(x.decode("ASCII"))
-        print("{0:50} intent:{1}".format(phrase, model.getIntent(phrase)), end=" ")
-
-
-
-
+        print("{0:50} intent:{1}".format(phrase, model.get_intent(phrase)), end=" ")
