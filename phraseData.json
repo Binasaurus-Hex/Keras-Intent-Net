@@ -67,7 +67,7 @@
 
   "HelpMe": [
     "help me",
-    "i require assistance",
+    "i want help",
     "please help me",
     "I need you to help me"
   ],
@@ -92,6 +92,13 @@
     "switch the lights off",
     "turn the lights off",
     "lights off"
+  ],
+
+  "MakeFood": [
+    "i would like some cake",
+    "i want a stew",
+    "i want to eat an apple",
+    "i am hungry and i want food"
   ],
 
   "Unknown": [

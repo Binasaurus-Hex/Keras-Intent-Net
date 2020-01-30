@@ -74,6 +74,13 @@
     "turn light off"
   ],
 
+  "MakeFood": [
+    "i would like some cake",
+    "i want a stew",
+    "i want an apple",
+    "i am hungry and i want food"
+  ],
+
   "Unknown": [
     ""
   ]
