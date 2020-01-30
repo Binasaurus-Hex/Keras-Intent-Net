@@ -3,15 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="f7273321-6f1c-43c4-9134-9380332f6e70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntentModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntentModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phraseData.json" beforeDir="false" afterPath="$PROJECT_DIR$/phraseData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testPhraseData.json" beforeDir="false" afterPath="$PROJECT_DIR$/testPhraseData.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,6 +39,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -110,7 +123,7 @@
       <workItem from="1576859988181" duration="3930000" />
       <workItem from="1580229543043" duration="5094000" />
       <workItem from="1580301581278" duration="5806000" />
-      <workItem from="1580322121667" duration="6890000" />
+      <workItem from="1580322121667" duration="7985000" />
     </task>
     <servers />
   </component>
@@ -137,7 +150,7 @@
     </ignored-roots>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KerasIntentNet$Main.coverage" NAME="Main Coverage Results" MODIFIED="1580390122958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KerasIntentNet$Main.coverage" NAME="Main Coverage Results" MODIFIED="1580390997231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Convolutional_Neural_Net$Convolutional_Neural_Net.coverage" NAME="Convolutional Neural Net Coverage Results" MODIFIED="1576254735343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
