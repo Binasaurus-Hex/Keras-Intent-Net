@@ -81,6 +81,66 @@
     "i am hungry and i want food"
   ],
 
+
+  "StartCar": [
+    "start the car",
+    "drive",
+    "turn on the car"
+  ],
+
+  "StopCar" : [
+    "stop the car",
+    "stop the damn car",
+    "turn the car off"
+  ],
+
+  "BookFlight": [
+    "book a flight",
+    "i want to fly from new york to london",
+    "i want to fly from gatwick",
+    "i would like to book a flight to paraguay"
+  ],
+
+  "BookHotel": [
+    "book a hotel",
+    "i would like to book a hotel in paris",
+    "i would like to stay for the night",
+    "i want a booking for a five star hotel in barbados",
+    "i am looking for somewhere to stay",
+    "i want a room for the night"
+  ],
+
+  "DoMaths": [
+    "what is two plus two",
+    "what is the square root of five",
+    "what is four times two"
+  ],
+
+  "SetTimer": [
+    ""
+  ],
+
+  "TVOff": [
+    "turn off the tv"
+  ],
+
+   "TVOn": [
+    "switch the tv on"
+  ],
+
+  "DoWashing": [
+    "i want you to wash my clothes",
+    "please put my clothes in the washing machine",
+    "i want my clothes cleaned"
+  ],
+
+  "BuyFood": [
+    "could you go out and get some food for me",
+    "could you get my a sandwich from the shop",
+    "i would like you to buy me a pie from sainsburys",
+    "could you get me some ingredients from tesco"
+  ],
+
   "Unknown": [
     ""
   ]

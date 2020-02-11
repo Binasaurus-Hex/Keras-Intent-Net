@@ -1,10 +1,9 @@
-import keras
-from keras import Input, Model
+from tensorflow_core.python.keras.layers import concatenate
+from tensorflow_core.python.keras import Input, Model
 
 from DataConverter import DataConverter
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Concatenate
-from keras.layers import Conv1D, GlobalMaxPooling1D
+from tensorflow_core.python.keras.layers import Dense, Dropout, Activation
+from tensorflow_core.python.keras.layers import Conv1D, GlobalMaxPooling1D
 import numpy as np
 
 
@@ -18,6 +17,7 @@ class IntentModel:
         self.examples = training_inputs.shape[1]
 
         self.model = self.getModel(training_inputs, training_outputs, testing_inputs, testing_outputs)
+        self.model.save("intentModel.h5")
 
     def getModel(self, training_inputs, training_outputs, testing_inputs, testing_outputs):
         input_tensor = Input(shape=(self.examples, self.word_vector_width))
@@ -26,7 +26,7 @@ class IntentModel:
             conv = Conv1D(4, kernel_len, activation="relu")(input_tensor)
             pooling = GlobalMaxPooling1D()(conv)
             conv_filters.append(pooling)
-        merged = keras.layers.concatenate(conv_filters)
+        merged = concatenate(conv_filters)
         input_dense = Dense(self.word_vector_width)(merged)
         dropout = Dropout(0.2)(input_dense)
         input_activation = Activation("relu")(dropout)
